@@ -1,0 +1,53 @@
+// Bucle FOR
+
+El For(Para) es un bucle muy importante para la programación, es similar al IF pero mucho mas completo,
+se ha convertido en el bucle más ampliamente utilizado en la programación, su función es para repetir una o 
+más instrucciones un determinado número de veces. De entre todos los bucles, el FOR se suele utilizar 
+cuando sabemos seguro el número de veces que queremos que se ejecute.
+La sintaxis del bucle for se muestra a continuación:
+
+for (let i = 0                 ; i < 10                 ; i++          ) {
+// | Declaramos una variable | Expresión condcicional | Incrementamos la variable |
+    console.log(i);
+}
+
+
+// Operadores Lógicos &&, || y !
+
+Si quieres probar multiples condiciones sin escribir declaraciones  if...else anidados, los operadores
+lógicos  pueden ayudarte. Cuando se usa en condiciones, los primeros dos hacen lo siguiente:
+
+&& — AND;  le permite encadenar dos o más expresiones para que todas ellas se tengan que evaluar 
+individualmente  true para que expresión entera retorne true. Veamos un ejemplo:
+
+    if (eleccion === 'soleado' && temperatura < 86) {
+      parrafo.textContent = 'Está a ' + temperatura + ' grados afuera — agradable y soleado. Vamos a la playa,
+      o al parque, y comer helado.';
+    } else if (eleccion === 'soleado' && temperatura >= 86) {
+      parrafo.textContent = 'Está a ' + temperatura + ' grados afuera — ¡QUÉ CALOR! Si deseas salir, asegúrate 
+      de aplicarte bloqueador solar.';
+    }
+
+el primer bloque solo se ejecutará si la variable eleccion === 'soleado' y temperatura < 86 devuelven un 
+valor verdadero o true.
+
+|| — OR; le permite encadenar dos o más expresiones para que una o más de ellas se tengan que evaluar
+individualmente true para que expresión entera retorne true. Veamos un ejemplo:
+    
+    if (carritoDeHelados || estadoDeLaCasa === 'en llamas') {
+      console.log('Debes salir de la casa rápidamente.');
+    } else {
+      console.log('Es mejor que te quedes dentro de casa');
+    }
+
+! - NOT; El último tipo de operador lógico, NOT, es expresado con el operador !, puede ser usado para negar 
+una expresión. Veamos un ejemplo:
+
+    if (!(carritoDeHelados || estadoDeLaCasa === 'en llamas')) {
+      console.log('Es mejor que te quedes dentro de casa');
+    } else {
+      console.log('Debes salir de la casa rápidamente.');
+    }
+
+En el anterior ejemplo, si las declaraciones del operador OR retornan un valor true,  el operador NOT 
+negará toda la expresión dentro de los paréntesis, por lo tanto retornará un valor false.
